@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fff6f9;
+  color: #444;
+  text-align: center;
+}
+
+header {
+  background-color: #ffe5ec;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff80ab;
+}
+
+main {
+  padding: 2rem;
+}
+
+.molang-mascote {
+  width: 300px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contato {
+  background-color: #fff0f5;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.contato input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-family: inherit;
+}
+
+.contato button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contato button:hover {
+  background-color: #ff80ab;
+}
+
+#mensagem-status {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffe5ec;
+  color: #d6336c;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 999;
+}
+
+footer {
+  background-color: #ffe5ec;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
