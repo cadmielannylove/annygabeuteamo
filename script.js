@@ -1,6 +1,4 @@
-(function () {
-  emailjs.init("fvIS17Nphrm-Y2v85"); // sua public key real
-})();
+emailjs.init("fvIS17Nphrm-Y2v85"); // sua public key real
 
 document.getElementById("carinho-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -10,17 +8,21 @@ document.getElementById("carinho-form").addEventListener("submit", function (e) 
   emailjs.send("service_hu38i0n", "template_8u1eo1o", {
     user_email: userEmail
   })
-  .then(function () {
-    document.getElementById("mensagem-sucesso").style.display = "block";
-  })
-  .catch(function (error) {
-    console.error("Erro ao enviar:", error);
-    alert("Erro ao enviar o carinho 😢 Verifique se está tudo certinho.");
-document.addEventListener("DOMContentLoaded", () => {
+    .then(function () {
+      document.getElementById("mensagem-sucesso").style.display = "block";
+    })
+    .catch(function (error) {
+      console.error("Erro ao enviar:", error);
+      alert("Erro ao enviar o carinho 🥺 Verifique se está tudo certinho.");
+    });
+});
+
+// 🎵 FAZ A MÚSICA TOCAR NO CLIQUE
+window.addEventListener("click", () => {
   const audio = document.getElementById("molang-music");
-  document.body.addEventListener("click", () => {
-    audio.play().catch(() => {});
-  }, { once: true });
-});
-  });
-});
+  if (audio) {
+    audio.play().catch((e) => {
+      console.warn("Erro ao tentar tocar a música:", e);
+    });
+  }
+}, { once: true });
