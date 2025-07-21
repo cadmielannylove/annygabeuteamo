@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carinho da Anny 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <img src="molang.png" alt="Molang fofo" class="molang" />
+    <h1>Oi, meu amor!</h1>
+    <p>Digite seu e-mail pra receber uma surpresa fofa 💌</p>
+    <form id="carinho-form">
+      <input type="email" id="user_email" placeholder="Seu e-mail" required />
+      <button type="submit">Receber carinho</button>
+    </form>
+    <p id="mensagem-sucesso" style="display:none;">Carinho enviado com sucesso! 💖</p>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
