@@ -1,4 +1,9 @@
-emailjs.init("ZmY_l_75ZXldHmEQZ"); // public key
+// emailjs.init - Atualizado para o formato mais recente
+(function(){
+  emailjs.init({
+    publicKey: "ZmY_l_75ZXldHmEQZ", // Sua chave pública original
+  });
+})();
 
 document.getElementById("carinho-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -10,10 +15,12 @@ document.getElementById("carinho-form").addEventListener("submit", function (e) 
   })
     .then(function () {
       document.getElementById("mensagem-sucesso").style.display = "block";
+      // Opcional: Limpar o campo de email após o envio
+      document.getElementById("user_email").value = "";
     })
     .catch(function (error) {
       console.error("Erro ao enviar:", error);
-      alert("Erro ao enviar o carinho 🥺 Verifique se está tudo certinho.");
+      alert("Erro ao enviar o carinho 🥺 Verifique se está tudo certinho. Detalhes: " + error.text);
     });
 });
 
