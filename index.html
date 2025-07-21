@@ -3,36 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site da Anny ✨</title>
+  <title>Carinho da Anny 🐰</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Bem-vinda ao Mundo da Anny! 🐰</h1>
-  </header>
+  <div class="container">
+    <h1>Receba carinho da Anny 🐰💌</h1>
+    <form id="carinho-form">
+      <input type="email" name="user_email" placeholder="Seu e-mail" required />
+      <button type="submit">Receber carinho ✨</button>
+    </form>
+    <div id="mensagem" class="mensagem"></div>
+    <img src="molang.png" alt="Molang grande" class="molang-mascote" />
+  </div>
 
-  <main>
-    <section class="principal">
-      <img src="molang.png" alt="Molang grande" class="molang-mascote" />
-      <p>Esse é um site super fofo feito com carinho 💖</p>
-    </section>
-
-    <section class="contato">
-      <h2>Receber carinho 💌</h2>
-      <form id="form-contato">
-        <input type="email" name="user_email" placeholder="Seu e-mail" required />
-        <button type="submit">Receber carinho ✨</button>
-      </form>
-    </section>
-
-    <div id="mensagem-status">Mensagem aqui!</div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 por Anny ✨</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
