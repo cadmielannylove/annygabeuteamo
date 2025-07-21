@@ -1,12 +1,12 @@
-emailjs.init("ZmY_l_75ZXldHmEQZ"); // sua public key real
+emailjs.init("ZmY_l_75ZXldHmEQZ"); // public key
 
 document.getElementById("carinho-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const userEmail = this.user_email.value;
+  const userEmail = document.getElementById("user_email").value;
 
   emailjs.send("service_efqjpdc", "template_mjr4byb", {
-    user_email: userEmail
+    email: userEmail // corrigido para bater com o template
   })
     .then(function () {
       document.getElementById("mensagem-sucesso").style.display = "block";
