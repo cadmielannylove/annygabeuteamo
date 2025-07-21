@@ -16,5 +16,11 @@ document.getElementById("carinho-form").addEventListener("submit", function (e) 
   .catch(function (error) {
     console.error("Erro ao enviar:", error);
     alert("Erro ao enviar o carinho 😢 Verifique se está tudo certinho.");
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("molang-music");
+  document.body.addEventListener("click", () => {
+    audio.play().catch(() => {});
+  }, { once: true });
+});
   });
 });
