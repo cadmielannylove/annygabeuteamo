@@ -1,11 +1,11 @@
-emailjs.init("fvIS17Nphrm-Y2v85"); // sua public key real
+emailjs.init("ZmY_l_75ZXldHmEQZ"); // sua public key real
 
 document.getElementById("carinho-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const userEmail = this.user_email.value;
 
-  emailjs.send("service_hu38i0n", "template_8u1eo1o", {
+  emailjs.send("service_efqjpdc", "template_mjr4byb", {
     user_email: userEmail
   })
     .then(function () {
